@@ -1,0 +1,401 @@
+/*** RESET ***/
+
+* {
+  box-sizing: border-box;
+  font-family: AvenirNext-UltraLight, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*** HEADER ***/
+
+
+header {
+  background-color: #23a2dc;
+}
+
+header img {
+
+}
+
+
+header a, header a:visited, header a:active {
+  color: white;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+header li {
+  padding: 1em 2em;
+}
+
+
+/*** MAIN ***/
+
+#main {
+  display: flex;
+  background: #23a2dc;
+  position: relative;
+  z-index: 1;
+  margin-top: -1px;
+  margin-bottom: 200px;
+  padding-top: 80px;
+
+}
+
+#main:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 75%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-6deg);
+  transform-origin: 100%;
+  z-index: -1;
+  background-image: url('./blueiphone.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left-panel {
+  width: 50%;
+  margin-left: 10em;
+}
+
+.left-panel h2 {
+  font-size: 2em;
+  color: white;
+}
+
+.left-panel h4 {
+  font-size: 1.5em;
+  color: #167499;
+}
+
+#main .button {
+  width: 100%;
+  display: flex;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+
+/*** STEPS ***/
+
+
+#steps {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 33%;
+  min-width: 300px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.step-text {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step h3 {
+  color: #167499;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.step h4 {
+  color: #23a2dc;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.step p {
+  margin-top: 0.5em;
+}
+
+.step-1, .step-2 {
+  border-right: 1px solid rgba(35, 162, 220, 0.2);
+}
+
+
+/*** WORKOUT-FEATURES ***/
+
+#workout-features {
+  background-color: #f6f9f9;
+}
+
+.title {
+  color: #23a2dc;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.underline {
+  width: 5em;
+  border-top: 1px solid #23a2dc;
+  padding-bottom: 5em;
+  margin: 1em auto;
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+
+.clicking {
+  position: relative;
+}
+
+.chart-icon, .trophy-icon, .cutlery-icon {
+  font-size: 28px;
+  width: 50%;
+  text-align: center;
+  line-height: 100px;
+}
+
+.chart-icon {
+  color: #65c273;
+  border-color: #65c273;
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.chart-icon:after {
+  content:"";
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: 50%;
+  border-right: 1px solid #65c273;
+  z-index: 1;
+}
+
+
+.trophy-icon {
+  color: red;
+  border-color: red;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+}
+
+.cutlery-icon {
+  color: #9a6ad7;
+  border-color: #9a6ad7;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+}
+
+.hover-detail {
+  position: absolute;
+  bottom: -200px;
+  width: 250px;
+}
+
+
+.hover-detail h2 {
+  color: #65c273;
+  margin: 0;
+}
+
+.hover-detail p {
+  margin-top: 5px;
+}
+
+
+.main-chart img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*** FEATURED-TRAINERS ***/
+
+#featured-trainers {
+  background-color: white;
+}
+
+.trainer-pics {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
+.trainer {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.mary {
+  background-image: url("http://www.cheatsheet.com/wp-content/uploads/2016/05/Do-Sport-in-the-sunset.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.elisa {
+  background-image: url("http://assets.wh.cdnds.net/images/5052/triathlon_training_plan_-_running_-_womens_health_uk__medium_4x3.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.brian {
+  background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/04/22/17/reebokrunning.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mary-name, .elisa-name, .brian-name {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+}
+
+.popularity {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  word-spacing: 2px;
+}
+
+.popularity i {
+  font-size: 14px;
+}
+
+
+/*** CREDENTIALS ***/
+
+#credentials {
+  background-color: #23a2dc;
+}
+
+.stats, .buttons {
+  width: 100%;
+  display: flex;
+}
+
+
+.stat h2 {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 0;
+}
+
+.stat h4 {
+  color: #167499;
+  margin-top: 0;
+}
+
+.button input {
+  background-color: #167499;
+  color: white;
+  width: 13em;
+  height: 3em;
+  border-style: hidden;
+  font-size: 16px;
+  padding: 1em;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+}
+
+.stat {
+  width: 50%;
+  text-align: center;
+}
+
+
+.white-line-separator {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2em;
+}
+
+
+/*** FOOTER ***/
+
+footer {
+  background-color: #08232c;
+  color: white;
+  display: flex;
+  width: 100%;
+}
+
+footer a, footer a:visited, footer a:active {
+  color: white;
+}
+
+
+.left, .right {
+  width: 50%;
+  opacity: 0.5;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.left {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.right ul {
+  display: flex;
+  justify-content: center;
+}
+
+.right li {
+  padding-right: 20px;
+}
